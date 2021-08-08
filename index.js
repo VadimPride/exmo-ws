@@ -1,4 +1,10 @@
-let API        = require('./API/Private');
-    API.Public = require('./API/Public');
+global.$$exmoWS$$ = {};
+require('./App/index');
+require('./Helpers/Node')
+require('./Helpers/index');
+require('./App/subscribeObject');
+require('./App/WSObject');
+require('./App/PublicWS');
+require('./App/PrivateWS');
 
-module.exports = API;
+module.exports = $$exmoWS$$;
